@@ -12,7 +12,7 @@ O projeto permite que o usuário se cadastre, faça login e gerencie suas despes
 
 ## Como Instalar e Executar
 
-**Servidor local como o XAMPP.
+**Servidor local como o XAMPP.**
 
 1.  **Copie os arquivos:**
     Coloque a pasta do projeto (`controle-despesas`) dentro do `htdocs`.
