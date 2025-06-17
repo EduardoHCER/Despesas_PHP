@@ -1,8 +1,8 @@
 # Projeto Controle de Despesas Pessoal
 
 Alunos: 
-Eduardo Rech, 
 
+Eduardo Rech, 
 Arthur Niwa
 
 Nosso projeto consiste em um sistema simples para controle de despesas pessoais, desenvolvido em PHP com um banco de dados MySQL. A interface utiliza Bootstrap/HTML/CSS.
