@@ -1,5 +1,5 @@
 <?php
-require 'config/proteger_pagina.php'; 
+require 'config/proteger_pagina.php';
 require 'config/conexao.php';
 
 $usuario_id = $_SESSION['usuario_id'];
@@ -12,8 +12,10 @@ $itens = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <?php include 'includes/header.php'; ?>
 
-<h3>Bem-vindo, <?php echo htmlspecialchars($_SESSION['usuario_login']); ?>!</h3>
-<p>Aqui estão suas despesas cadastradas.</p>
+<div class="mx-auto">
+    <h3>Bem-vindo, <?php echo htmlspecialchars($_SESSION['usuario_login']); ?>!</h3>
+    <p>Aqui estão suas despesas cadastradas.</p>
+</div>
 
 <?php if (isset($_GET['sucesso']) && $_GET['sucesso'] == 'cadastro'): ?>
     <div class="alert alert-success">Despesa cadastrada com sucesso!</div>
@@ -22,10 +24,10 @@ $itens = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="alert alert-success">Despesa atualizada com sucesso!</div>
 <?php endif; ?>
 
-<div class="card">
+<div class="card shadow sm px-5 mx-5">
     <div class="card-header d-flex justify-content-between align-items-center">
         <h4>Minhas Despesas</h4>
-        <a href="cadastrar_item.php" class="btn btn-primary">Adicionar Nova Despesa</a>
+        <a href="cadastrar_item.php" class="btn btn-success">Adicionar Nova Despesa</a>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -46,7 +48,12 @@ $itens = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?php echo number_format($item['valor'], 2, ',', '.'); ?></td>
                                 <td><?php echo $item['data_formatada']; ?></td>
                                 <td>
-                                    <a href="editar_item.php?id=<?php echo $item['id']; ?>" class="btn btn-sm btn-warning">Editar</a>
+                                    <a href="editar_item.php?id=<?php echo $item['id']; ?>"
+                                        class="btn btn-sm btn-warning">Editar</a>
+                                    <a href="excluir_item.php?id=<?php echo $item['id']; ?>" class="btn btn-sm btn-danger"
+                                        onclick="return confirm('Tem certeza que deseja excluir esta despesa?');">
+                                        Excluir
+                                    </a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

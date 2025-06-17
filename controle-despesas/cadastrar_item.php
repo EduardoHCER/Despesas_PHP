@@ -38,9 +38,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <?php include 'includes/header.php'; ?>
-<h3>Cadastrar Nova Despesa</h3>
+<div class="mx-auto">
+    <h3>Cadastrar Nova Despesa</h3>
+</div>
 
-<div class="card">
+<div class="card px-5 mx-5 shadow lg">
     <div class="card-body">
         <?php if (!empty($erros)): ?>
             <div class="alert alert-danger">

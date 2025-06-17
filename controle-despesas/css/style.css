@@ -2,8 +2,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image:url(https://wallpaperbat.com/img/65188-grid-hexagonal-white-hd-wallpaper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.container {
-    flex: 1;
+header,
+footer {
+    font-family: 'Nunito Sans', sans-serif;
 }

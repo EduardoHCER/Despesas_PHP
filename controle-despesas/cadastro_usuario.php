@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="row justify-content-center">
     <div class="col-md-6 col-lg-5">
-        <div class="card">
+        <div class="card shadow sm">
             <div class="card-header">
                 <h3>Cadastro de Usuário</h3>
             </div>
