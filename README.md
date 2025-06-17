@@ -5,7 +5,7 @@ Alunos:
 Eduardo Rech, 
 Arthur Niwa
 
-Nosso projeto consiste em um sistema simples para controle de despesas pessoais, desenvolvido em PHP com um banco de dados MySQL. A interface utiliza Bootstrap/HTML/CSS.
+Nosso projeto consiste em um sistema simples para controle de despesas pessoais, desenvolvido em PHP com um banco de dados MySQL. A interface utiliza Bootstrap/HTML/CSS. Para a escrita e formatação do Readme o site https://stackedit.io foi utilizado.
 
 O projeto permite que o usuário se cadastre, faça login e gerencie suas despesas (adicionar, editar e excluir).
 
