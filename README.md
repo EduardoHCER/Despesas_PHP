@@ -2,9 +2,10 @@
 
 Alunos: 
 Eduardo Rech, 
+
 Arthur Niwa
 
-Este é um sistema simples para controle de despesas pessoais, desenvolvido em PHP com um banco de dados MySQL. A interface utiliza Bootstrap/HTML/CSS.
+Nosso projeto consiste em um sistema simples para controle de despesas pessoais, desenvolvido em PHP com um banco de dados MySQL. A interface utiliza Bootstrap/HTML/CSS.
 
 O projeto permite que o usuário se cadastre, faça login e gerencie suas despesas (adicionar, editar e excluir).
 
@@ -12,7 +13,7 @@ O projeto permite que o usuário se cadastre, faça login e gerencie suas despes
 
 ## Como Instalar e Executar
 
-**Servidor local como o XAMPP.**
+**Servidor local deve ser o XAMPP.**
 
 1.  **Copie os arquivos:**
     Coloque a pasta do projeto (`controle-despesas`) dentro do `htdocs`.
@@ -27,15 +28,15 @@ O projeto permite que o usuário se cadastre, faça login e gerencie suas despes
     * Vá na aba "Importar", escolha o arquivo `controle_despesas.sql` (que está na pasta do projeto) e execute a importação.
 
 4.  **Acesse o sistema:**
-    Abra seu navegador e acesse: `http://localhost/controle-despesas/`
+    Acesse: `http://localhost/controle-despesas/`
 
 ---
 
 ## Credenciais de Teste
 
-Para acessar o sistema e testar as funcionalidades, você pode usar as seguintes credenciais:
+Para acessar o sistema use o login abaixo:
 
 * **Login:** `admin`
 * **Senha:** `123`
 
-*(Você também pode criar seu próprio usuário na página de cadastro.)*
+*(Ou crie um novo usuário)*
